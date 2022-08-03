@@ -6,9 +6,9 @@ meta:
 <script setup lang="ts">
 import P5 from 'p5'
 import { onMounted, ref } from 'vue';
-async function init() {
-  await new P5(sketch)
-  await new P5(sketch2)
+function init() {
+  new P5(sketch)
+  new P5(sketch2)
 }
 
 function sketch(p: P5) {
